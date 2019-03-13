@@ -17,3 +17,4 @@ CREATE TABLE `nametable2` (
   `breakfast` text NOT NULL,
   `message` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+...
