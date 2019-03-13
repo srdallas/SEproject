@@ -48,20 +48,55 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <aside id="sidebar">
         <div class="dark">
           <h3>Make Reservations</h3>
-          <form class="quote">
+          <form action="insert1.php" method="post" class="quote">
             <div>
               <label>Name</label><br>
-              <input type="text" placeholder="Name">
+              <input type="text" name="name">
             </div>
             <div>
               <label>Email</label><br>
-              <input type="email" placeholder="Emial Address">
+              <input type="email" name="email">
             </div>
             <div>
+  							<label>Check IN</label><br>
+  							<input type="date" name ="cidate">
+  					</div>
+            <div>
+  							<label>Check Out</label><br>
+                <input type="date" name ="codate">
+            </div>
+
+            <div>
+  							<label>Number Of Adult People</label><br>
+                <input type="number" name ="guest" min="1" max="6">
+  					</div>
+            <div>
+                <label>Number Of Children</label><br>
+                <input type="number" name ="children" min="0" max="6">
+            </div>
+            <div>
+  							<label>Bed Size</label><br>
+                    <select name="bed">
+                            <option value="Villa">Villa [$200]</option>
+                            <option value="King Sweet">King Sweet [$150]</option>
+                            <option value="Quen Sweet">Quen Sweet [$130]</option>
+                            <option value="Full Sweet">Full Sweet [$100]</option>
+                    </select>
+  					</div>
+            <div>
+                <label>Breakfast</label><br>
+                    <select name="breakfast">
+                      <option value="Yes">Yes[+$10]</option>
+                      <option value="No">No</option>
+                    </select>
+            </div>
+
+            <div>
               <label>Message</label><br>
-              <textarea placeholder="Message"></textarea>
+              <textarea name="message"></textarea>
             </div>
             <button class="button_1" type="submit">Send</button>
+        </div>
         </form>
         </div>
       </aside>
