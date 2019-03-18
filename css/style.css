@@ -32,6 +32,7 @@ ul{
   color:#ffffff;
   margin-top:10px;
   margin-bottom:10px;
+  float: left;
 }
 
 /* Header **/
@@ -51,7 +52,7 @@ header a{
 }
 
 header li{
-  float:left;
+  float:right;
   display:inline;
   padding: 0 20px 0 20px;
 }
@@ -65,7 +66,7 @@ header #branding h1{
 }
 
 header nav{
-  float:right;
+  float:left;
   margin-top:10px;
 }
 
@@ -130,25 +131,27 @@ header a:hover{
 
 #boxes .box{
   float:left;
+  width: 30%;
   text-align: center;
-  width:30%;
   padding:10px;
 }
 
 #boxes .box img{
-  width:90px;
+max-width:90%;
 }
+
 
 /* Sidebar */
 aside#sidebar{
-  float:right;
-  width:30%;
+  float:center;
+  width:90%;
   margin-top:10px;
 }
 
 aside#sidebar .quote input, aside#sidebar .quote textarea{
-  width:90%;
+  width:100%;
   padding:5px;
+  float: center;
 }
 
 /* Main-col */
@@ -205,5 +208,6 @@ footer{
   #newsletter form input[type="email"], .quote input, .quote textarea{
     width:100%;
     margin-bottom:5px;
+    float: left;
   }
 }

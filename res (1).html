@@ -15,8 +15,8 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="login.php">Reservations</a></li>
-            <li class="current"><a href="cs.html">Customer Service</a></li>
+            <li class="current"><a href="res.html">Reservations</a></li>
+            <li><a href="cs.html">Customer Service</a></li>
           </ul>
         </nav>
       </div>
@@ -39,17 +39,38 @@
             <h3>Make Reservations</h3>
             <form class="quote">
   						<div>
-  							<label>Name</label><br>
-  							<input type="text" placeholder="Name">
+  							<label>Check IN</label><br>
+  							<input type="date" name ="date" min="03/6/2019">
   						</div>
   						<div>
-  							<label>Email</label><br>
-  							<input type="email" placeholder="Emial Address">
+  							<label>Check Out</label><br>
+                <input type="date" name ="date" min="03/6/2019">  						</div>
   						</div>
-  						<div>
-  							<label>Message</label><br>
-  							<textarea placeholder="Message"></textarea>
+              <div>
+  							<label>Number Of Adult People</label><br>
+                <input type="number" name ="numberOfGuest" min="1" max="6">
   						</div>
+              <div>
+                <label>Number Of Children</label><br>
+                <input type="number" name ="numberOfGuest" min="0" max="6">
+              </div>
+                <div>
+  							<label>Bed Size</label><br>
+                    <select>
+                        <option value="Villa">Villa 200$</option>
+                        <option value="King Sweet">King Sweet 150$</option>
+                        <option value="Quen Sweet">Quen Sweet  130$</option>
+                        <option value="Full Sweet">Full Sweet   100$</option>
+                    </select>
+  						</div>
+              <div>
+              <label>Breakfast</label><br>
+                  <select>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                  </select>
+            </div>
+
   						<button class="button_1" type="submit">Send</button>
 					</form>
           </div>
