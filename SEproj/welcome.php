@@ -15,7 +15,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Oakland Towers| Reservations</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style1.css">
 </head>
 <body>
   <header>
@@ -25,9 +25,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       </div>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="current"><a href="login.php">Reservations</a></li>
           <li><a href="cs.html">Customer Service</a></li>
+          <li class="current"><a href="login.php">Reservations</a></li>
+          <li><a href="index.html">Home</a></li>
+
         </ul>
       </nav>
     </div>
@@ -106,14 +107,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <footer>
     <p>Oakland Towers, Copyright &copy; 2019</p>
 
-
-
-
-
-
     <p>
-        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
-        <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+        <a href="reset-password.php" class="btn">Reset Your Password</a>
+        <a href="logout.php" class="btn">Sign Out of Your Account</a>
     </p>
 </footer>
 </html>
